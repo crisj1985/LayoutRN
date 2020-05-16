@@ -1,21 +1,20 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 const App = () => {
     return (
       <>
-
+        <View style={{flexDirection:'row'}}>
+          <Image source={require('./assets/img/bg.jpg')} style={styles.banner} />
+        </View>
       </>
     )
 };
 
 const styles = StyleSheet.create({
-  contenedor: {
-    flex: 1,
-    backgroundColor: 'red',
-    // flexDirection:"row",
-    alignItems:"flex-end",
-    justifyContent:"center"
+  banner: {
+    height:250,
+    flex:1
   },
  
 })
