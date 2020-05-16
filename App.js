@@ -1,31 +1,23 @@
-import React from 'react'
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native'
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen'
+const App = () => {
+    return (
+      <>
 
-const App =  () => {
-  return (
-    <>
-      <Text>Hola</Text>
-    </>
-  )
-}
+      </>
+    )
+};
 
 const styles = StyleSheet.create({
-  
+  contenedor: {
+    flex: 1,
+    backgroundColor: 'red',
+    // flexDirection:"row",
+    alignItems:"flex-end",
+    justifyContent:"center"
+  },
+ 
 })
 
 export default App
