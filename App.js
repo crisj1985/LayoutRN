@@ -29,18 +29,33 @@ const App = () => {
             </ScrollView>
             <Text style={styles.titulo}>Los mejores alojamientos</Text>
             <View>
-              <View style={{ flexDirection: 'row' }}>
+              <View>
                 <Image source={require('./assets/img/mejores1.jpg')} style={styles.mejores} />
               </View>
             </View>
             <View>
-              <View style={{ flexDirection: 'row' }}>
+              <View>
                 <Image source={require('./assets/img/mejores2.jpg')} style={styles.mejores} />
               </View>
             </View>
             <View>
-              <View style={{ flexDirection: 'row' }}>
+              <View>
                 <Image source={require('./assets/img/mejores3.jpg')} style={styles.mejores} />
+              </View>
+            </View>
+            <Text style={styles.titulo}>Hospedajes en Quito</Text>
+            <View style={styles.listado}>
+              <View style={styles.listadoItem}>
+                <Image source={require('./assets/img/hospedaje1.jpg')} style={styles.mejores} />
+              </View>
+              <View style={styles.listadoItem}>
+                <Image source={require('./assets/img/hospedaje2.jpg')} style={styles.mejores} />
+              </View>
+              <View style={styles.listadoItem}>
+                <Image source={require('./assets/img/hospedaje3.jpg')} style={styles.mejores} />
+              </View>
+              <View style={styles.listadoItem}>
+                <Image source={require('./assets/img/hospedaje4.jpg')} style={styles.mejores} />
               </View>
             </View>
           </View>
@@ -71,6 +86,14 @@ const styles = StyleSheet.create({
       width:"100%",
       height:150,
       marginVertical:5
+  },
+  listado:{
+flexDirection:"row",
+flexWrap:"wrap",
+justifyContent:"space-between"
+  },
+  listadoItem:{
+      flexBasis:"49%"
   }
 })
 
